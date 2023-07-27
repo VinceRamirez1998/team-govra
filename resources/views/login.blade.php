@@ -65,16 +65,16 @@
               
               <span class="text-white font-sans font-medium float-right xl:text-lg">Forgot password?</span>
 
-          <button class="btn btn-orangee mt-3 bg-orange-500 hover:bg-orange-700 text-white font-bold text-md xl:text-lg py-2 px-4 rounded w-full z-10">Login
+         <button class="btn btn-orangee mt-3 bg-orange-500 hover:bg-orange-700 text-white font-bold text-md xl:text-lg py-2 px-4 rounded w-full z-10">Login
 
-          </button>
+         </button>
 
           </form>
 
          
           <div class="flex mt-3">
             <span class="text-white font-sans font-extralight xl:text-lg">Don't have account yet?</span>
-            <span class="text-blue-500 font-sans font-medium ml-1 xl:text-lg">Sign up</span>
+           <a href="signup"> <span class="text-blue-500 font-sans font-medium ml-1 xl:text-lg">Sign up</span></a>
           </div>
         </div>
 

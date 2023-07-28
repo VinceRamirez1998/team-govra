@@ -13,8 +13,9 @@
   <nav class="text-white p-5 bg-blue-500 shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
-        <img class="h-10 inline"
-          src="images/govra_logo.png">
+        <img class="h-10 inline " src="{{URL('assets/images/govra_logo.png')}}" alt="govlogo">
+       
+      
         GOVRA
       </span>
 

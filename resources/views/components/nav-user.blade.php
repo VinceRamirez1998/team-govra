@@ -9,7 +9,7 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body class="bg-white-400">
+<body>
   <nav class="text-white p-5 bg-blue-500 shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">

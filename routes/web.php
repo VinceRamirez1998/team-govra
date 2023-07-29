@@ -26,3 +26,6 @@ Route::get('/signup', function () {
 Route::get('/user-index', function () {
     return view('user-index');
 });
+Route::get('/user/job-offers-user', function () {
+    return view('user/job-offers-user');
+});

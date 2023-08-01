@@ -29,3 +29,9 @@ Route::get('/user-index', function () {
 Route::get('/user/job-offers-user', function () {
     return view('user/job-offers-user');
 });
+Route::get('/user/job-clicked-user', function () {
+    return view('user/job-clicked-user');
+});
+Route::get('/user/government-job-offers', function () {
+    return view('user/government-job-offers');
+});

@@ -10,6 +10,9 @@ export default {
       colors: {
         darkb: "#002233",
         boxbg: '#E5E5E5',
+        iconbg: '#222222',
+        bgcolor: '#FFFBFB',
+        bgboxes: '#E9E5E5',
       },
     },
   },

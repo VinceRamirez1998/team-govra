@@ -40,36 +40,36 @@
 
             {{-- job-details --}}
             <div class="flex flex-col justify-start items-start w-[90%] sm:w-[75%] md:w-[65%] lg:w-full  h-[13rem] sm:h-[14rem] md:h-[15rem] xl:h-[17rem] lg:pl-20 xl:pl-24 mt-8 border-solid border-2 lg:border-x-0 border-sky-50 rounded-md lg:rounded-none bg-gray-50 shadow-lg">
-                <span class="text-xl sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
-                <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
-                <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
-                <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
+                <span class="text-lg sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
+                <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
+                <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
+                <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
             </div>
 
 
            {{-- job-details --}}
            <div class="flex flex-col justify-start items-start w-[90%] sm:w-[75%] md:w-[65%] lg:w-full lg:border-x-0 lg:rounded-none lg:pl-20 xl:pl-24 h-[13rem] sm:h-[14rem] md:h-[15rem] xl:h-[17rem]  border-solid border-2 border-sky-50 rounded-md bg-gray-50 shadow-lg">
-            <span class="text-xl sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
+            <span class="text-lg sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
         </div>
 
            {{-- job-details --}}
            <div class="flex flex-col justify-start items-start w-[90%] sm:w-[75%] md:w-[65%] lg:w-full lg:rounded-none lg:border-x-0 lg:pl-20 xl:pl-24    h-[13rem] sm:h-[14rem] md:h-[15rem] xl:h-[17rem]  border-solid border-2 border-sky-50 rounded-md bg-gray-50 shadow-lg">
-            <span class="text-xl sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
+            <span class="text-lg sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
         </div>
 
 
            {{-- job-details --}}
            <div class="flex flex-col justify-start items-start w-[90%] sm:w-[75%] md:w-[65%] lg:w-full lg:rounded-none lg:border-x-0 lg:pl-20 xl:pl-24  h-[13rem] sm:h-[14rem] md:h-[15rem] xl:h-[17rem] mb-5  border-solid border-2 border-sky-50 rounded-md bg-gray-50 shadow-lg">
-            <span class="text-xl sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
-            <span class="text-lg sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
+            <span class="text-lg sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/job-requirements-icon.svg')}}" alt="requirements"> Job Requirements</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/location-icon-black.svg')}}" alt="requirements"> Location</span>
+            <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
         </div>
           
         </div>

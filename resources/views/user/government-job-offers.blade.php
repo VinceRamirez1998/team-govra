@@ -27,9 +27,9 @@
 
         <div class="h-[3rem] sm:h-[3.5rem] md:h-[4rem] w-full flex items-center justify-center border-y-2 border-gray-200">
             <ul class="flex flex-row gap-5 md:gap-16">
-                <li class="text-xs sm:text-base md:text-lg font-sans font-bold ">Government Overview</li>
-                <li class="text-xs sm:text-base md:text-lg font-sans font-bold  text-blue-500 underline decoration-blue-500 underline-offset-4 decoration-2 ">Jobs Offer</li>
-                <li class="text-xs sm:text-base md:text-lg font-sans font-bold">Reviews</li>
+                <a href="/job-clicked-user"><li class="text-xs sm:text-base md:text-lg font-sans font-bold ">Government Overview</li></a>
+                <a href="/government-job-offers"><li class="text-xs sm:text-base md:text-lg font-sans font-bold  text-blue-500 underline decoration-blue-500 underline-offset-4 decoration-2 ">Jobs Offer</li></a>
+                <a href="/government-reviews"><li class="text-xs sm:text-base md:text-lg font-sans font-bold">Reviews</li></a>
             </ul>
     
         </div>

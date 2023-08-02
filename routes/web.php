@@ -26,12 +26,15 @@ Route::get('/signup', function () {
 Route::get('/user-index', function () {
     return view('user-index');
 });
-Route::get('/user/job-offers-user', function () {
+Route::get('job-offers-user', function () {
     return view('user/job-offers-user');
 });
-Route::get('/user/job-clicked-user', function () {
+Route::get('job-clicked-user', function () {
     return view('user/job-clicked-user');
 });
-Route::get('/user/government-job-offers', function () {
+Route::get('government-job-offers', function () {
     return view('user/government-job-offers');
+});
+Route::get('government-reviews', function () {
+    return view('user/government-reviews');
 });

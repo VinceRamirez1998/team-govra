@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    @vite('resources/css/app.css')
    
     
 </head>
@@ -30,9 +30,9 @@
 
         <div class="h-[3rem] sm:h-[3.5rem] md:h-[4rem] w-full flex items-center justify-center border-y-2 border-gray-200">
             <ul class="flex flex-row gap-5 md:gap-16">
-                <li class="text-xs sm:text-base md:text-lg text-blue-500  font-sans font-bold underline decoration-blue-500 underline-offset-4 decoration-2">Government Overview</li>
-                <li class="text-xs sm:text-base md:text-lg font-sans font-bold">Jobs Offer</li>
-                <li class="text-xs sm:text-base md:text-lg font-sans font-bold">Reviews</li>
+                <a href="/job-clicked-user"><li class="text-xs sm:text-base md:text-lg text-blue-500  font-sans font-bold underline decoration-blue-500 underline-offset-4 decoration-2">Government Overview</li></a>
+                <a href="/government-job-offers"><li class="text-xs sm:text-base md:text-lg font-sans font-bold">Jobs Offer</li></a>
+                <a href="/government-reviews"><li class="text-xs sm:text-base md:text-lg font-sans font-bold">Reviews</li></a>
             </ul>
     
         </div>
@@ -76,7 +76,7 @@
                             <span class="text-white font-sans font-semibold sm:text-lg ">Mission</span>
                      </div>
                      {{-- VISION-details --}}
-                     <p class="p-3 font-sans text-justify  text-xs sm:text-base lg:text-base xl:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi repellendus, quidem mollitia neque cum dolorem numquam explicabo suscipit ratione distinctio magni nemo ad libero nesciunt officiis hic repudiandae! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae sint corporis, dolore sapiente dolor et itaque accusamus! Ipsa, expedita alias voluptate odio explicabo! </p>
+                     <p class="p-3 font-sans text-justify text-xs sm:text-base lg:text-base xl:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi repellendus, quidem mollitia neque cum dolorem numquam explicabo suscipit ratione distinctio magni nemo ad libero nesciunt officiis hic repudiandae! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae sint corporis, dolore sapiente dolor et itaque accusamus! Ipsa, expedita alias voluptate odio explicabo! </p>
                    
                 </div>
         </div>
@@ -90,7 +90,7 @@
                         <div class="flex justify-center items-center ml-5 h-[4.5rem] sm:h-[5.5rem] w-20 sm:w-[5.5rem]  border-solid border-2 border-sky-50 shadow-sm rounded-[50%] bg-iconbg">
                             <img class="h-[55%] w-[70%] object-contain" src="{{URL('assets/icons/location-icon.svg')}}" alt="location">
                         </div>
-                        <div class="h-[6rem] sm:h-[6.5rem] w-[10rem] sm:w-[12rem] md:w-[14rem] lg:w-[11rem]">
+                        <div class="h-[6rem] sm:h-[6.5rem] w-[10rem] sm:w-[12rem] mt-6  md:w-[14rem] lg:w-[11rem]">
                             <span class="text-sm font-sans font-bold mb-1 sm:text-base md:text-lg">Location</span><br>
                             <span class="text-xs text-justify font-sans font-bold mb-1 sm:text-sm md:text-base">Lorem ipsum dolor sit, amet consectetur  </span>
                         </div>
@@ -101,7 +101,7 @@
                         <div class="flex justify-center items-center ml-5 h-[4.5rem] sm:h-[5.5rem] w-20 sm:w-[5.5rem]  border-solid border-2 border-sky-50 shadow-sm rounded-[50%] bg-iconbg">
                             <img class="h-[70%] w-[70%] object-contain" src="{{URL('assets/icons/website-icon.svg')}}" alt="location">
                         </div>
-                        <div class="h-[6rem] sm:h-[6.5rem] w-[10rem] sm:w-[12rem]  md:w-[14rem] lg:w-[11rem]">
+                        <div class="h-[6rem] sm:h-[6.5rem] w-[10rem] sm:w-[12rem] mt-6  md:w-[14rem] lg:w-[11rem]">
                             <span class="text-sm font-sans font-bold mb-1 sm:text-base md:text-lg">Webiste</span><br>
                             <span class="text-xs text-justify font-sans font-bold mb-1 sm:text-sm md:text-base">Lorem ipsum dolor sit, amet consectetur  </span>
                         </div>
@@ -113,9 +113,9 @@
                         <div class="flex justify-center items-center ml-5 h-[4.5rem] sm:h-[5.5rem] w-20 sm:w-[5.5rem]  border-solid border-2 border-sky-50 shadow-sm rounded-[50%] bg-iconbg">
                             <img class="h-[50%] w-[70%] object-contain" src="{{URL('assets/icons/contact-icon.svg')}}" alt="location">
                         </div>
-                        <div class="h-[6rem]  sm:h-[6.5rem] w-[10rem] sm:w-[12rem]  md:w-[14rem] lg:w-[11rem]">
+                        <div class="h-[6rem]  sm:h-[6.5rem] w-[10rem] sm:w-[12rem] mt-6  md:w-[14rem] lg:w-[11rem]">
                             <span class="text-sm font-sans font-bold mb-1 sm:text-base md:text-lg">Contacts</span><br>
-                            <span class="text-xs text-justify font-sans font-bold mb-1 sm:text-sm md:text-base">Lorem ipsum dolor sit, amet consectetur  </span>
+                            <span class="text-xs text-justify font-sans font-bold mb-1  sm:text-sm md:text-base">Lorem ipsum dolor sit, amet consectetur  </span>
                         </div>
                     </div>
 

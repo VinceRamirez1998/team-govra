@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-white-400">
-  <nav class="text-white p-5 bg-blue-500 shadow md:flex md:items-center md:justify-between fixed w-full top-0">
+  <nav class="text-white p-5 bg-blue-500 z-50 shadow md:flex md:items-center md:justify-between fixed w-full top-0">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
         <img class="h-10 inline " src="{{URL('assets/images/govra_logo.png')}}" alt="govlogo">
@@ -95,10 +95,9 @@
     }
     </script>
 
-
-<script>
     <!-- Add the following JavaScript code to your HTML file -->
 
+    <script>
   // Get the button and dropdown elements
   const button = document.getElementById('dropdownHoverButton');
   const dropdown = document.getElementById('dropdownHover');

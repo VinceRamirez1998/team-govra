@@ -35,7 +35,7 @@
     
         </div>
 
-        <div class="flex justify-end mt-3 h-10 sm:h-12 md:h-14 items-center pr-5 md:pr-8 w-full ">  <a href="user-index"><button class="btn btn-orangee bg-orange-500 hover:bg-orange-700 text-white font-bold text-xs md:text-base xl:text-lg py-1 px-6 sm:px-7 md:px-8 h-7 sm:h-8 md:h-9 rounded-md w-full z-10">Write a review
+        <div class="flex justify-end mt-3 h-10 sm:h-12 md:h-14 items-center pr-5 md:pr-8 w-full ">  <a href="/user-write-review"><button class="btn btn-orangee bg-orange-500 hover:bg-orange-700 text-white font-bold text-xs md:text-base xl:text-lg py-1 px-6 sm:px-7 md:px-8 h-7 sm:h-8 md:h-9 rounded-md w-full z-10">Write a review
 
         </button></a> </div>
 

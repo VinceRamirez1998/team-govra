@@ -38,3 +38,9 @@ Route::get('government-job-offers', function () {
 Route::get('government-reviews', function () {
     return view('user/government-reviews');
 });
+Route::get('user-write-review', function () {
+    return view('user/user-write-review');
+});
+Route::get('apply-job', function () {
+    return view('user/apply-job');
+});

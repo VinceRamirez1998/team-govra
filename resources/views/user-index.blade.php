@@ -13,7 +13,7 @@
     
     {{-- csc banner logo --}}
 
-    <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:flex lg:max-w-screen-xl  md:justify-center md:items-center lg:justify-center lg:items-center xl:max-w-screen-2xl xl:justify-start xl:items-center justify-start items-center w-full h-40 mt-1 border-solid border-2 border-l-blue-600 z-0">
+    <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:flex lg:max-w-screen-xl  md:justify-center md:items-center lg:justify-center lg:items-center xl:max-w-screen-2xl xl:justify-start xl:items-center justify-start items-center w-full h-40 mt-20 border-solid border-2 border-l-blue-600 z-0">
      <img class="h-[6rem] w-[100%] lg:border-solid lg:border-2 lg:border-red-700 md:w-[80%] lg:w-[80%] xl:w-[55%] xl:ml-20 xl:h-[8rem] " src="{{URL('assets/images/csc-logo-03.png')}}" alt="cscbannerlogo">   
     </div>
 

@@ -21,9 +21,142 @@
     <div class="flex items-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl xl:flex-row xl:h-[25rem] flex-col border-solid border-2 border-green-700 h-[29rem] md:h-[53rem] lg:h-[40rem] w-full">
 
         {{-- banner container --}}
-        <div class="hidden md:flex border-solid border-2 border-red-600 mt-5 w-[90%] lg:w-[80%] xl:w-[50%] xl:mr-10 xl:ml-28 xl:mb-4 xl:h-70 h-80">
+        <div class="hidden md:flex border-solid border-2 relative border-sky-50 shadow-md mt-5 w-[90%] lg:w-[80%] xl:w-[50%] xl:mr-10 xl:ml-28 xl:mb-4 xl:h-70 h-auto">
 
+            <div
+  id="carouselExampleControls"
+  class="relative"
+  data-te-carousel-init
+  data-te-ride="carousel">
+  <!--Carousel items-->
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <!--First item-->
+    <div
+      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none border-solid border-2 border-red-400"
+      data-te-carousel-item
+      data-te-carousel-active>
+      {{-- <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+        class="block w-full"
+        alt="Wild Landscape" /> --}}
+        <img src="{{URL('assets/images/Online_Zumba_and_Film_Showing.png')}}" alt="onlinezumba" class="block w-full h-full object-cover border-solid border-2 border-green-300" />
+    </div>
+    <!--Second item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item>
+      <img src="{{URL('assets/images/2023_Government_Online_Career_Fair.png')}}" alt="onlinecareer" class="block w-full h-full object-cover" />
+      
+
+    </div>
+    <!--Third item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item>
+      
+      <img src="{{URL('assets/images/csevs.png')}}" alt="csevs" class="block w-full h-full object-cover" />
+    </div>
+
+     <!--fourth item-->
+     <div
+     class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+     data-te-carousel-item>
+     
+     <img src="{{URL('assets/images/List_of_Passers_for_the_26_March_2023_CSE-PPT.png')}}" alt="List_of_Passers" class="block w-full h-full object-cover" />
+   </div>
+
+    <!--5th item-->
+    <div
+    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+    data-te-carousel-item>
+    
+    <img src="{{URL('assets/images/MicrosoftTeams-image_4.png')}}" alt="microsoftteams" class="block w-full h-full object-cover" />
+  </div>
+
+   <!--six item-->
+   <div
+   class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+   data-te-carousel-item>
+   
+   <img src="{{URL('assets/images/CSC_in_Action_Slider.jpg')}}" alt="inactionslider" class="block w-full h-full object-cover" />
+ </div>
+
+  <!--seven item-->
+  <div
+  class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+  data-te-carousel-item>
+  
+  <img src="{{URL('assets/images/CS_Reporter_Q2_2023.png')}}" alt="csreporter" class="block w-full h-full object-cover" />
+</div>
+
+         <!--last item-->
+  <div
+  class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+  data-te-carousel-item>
+  
+  <img src="{{URL('assets/images/CSC_TikTok_slider.png')}}" alt="tiktok" class="block w-full h-full object-cover" />
+</div>
+
+
+   
+
+  </div>
+
+  <!--Carousel controls - prev item-->
+  <button
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleControls"
+    data-te-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <!--Carousel controls - next item-->
+  <button
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleControls"
+    data-te-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</div>
         </div>
+
+        
         
         <div class="flex flex-col w-full justify-center items-center lg:flex lg:flex-row lg:gap-10 lg:w-full xl:items-start xl:justify-start xl:gap-2 xl:flex-col xl:w-[30%] xl:mr-10 xl:h-[22rem] xl:mb-4  lg:mt-5 lg:justify-center lg:items-center lg:h-[19rem]">
             {{-- announcements container --}}
@@ -78,13 +211,13 @@
     </div>
 
      {{-- popular job container --}}
-     <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl flex-col items-center pt-5 w-full h-[80rem] sm:h-[90rem] md:h-[95rem] lg:h-[21rem] xl:h-[25rem] border-solid border-2 border-blue-500">
-        <div class="flex flex-col items-center h-[80rem] sm:h-[90rem] md:h-[95rem] w-[90%] lg:flex-col lg:w-screen lg:flex lg:justify-start lg:items-start lg:h-[21rem] border-solid border-2 border-green-600 mt-2">
+     <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl flex-col items-center  w-full h-[80rem] sm:h-[90rem] md:h-[95rem] lg:h-[21rem] xl:h-[25rem] border-solid border-2 border-blue-500">
+        <div class="flex flex-col items-center h-[80rem]  sm:h-[90rem] md:h-[95rem] w-[90%] lg:flex-col lg:w-screen lg:flex lg:justify-start lg:items-start lg:h-[21rem] mt-2">
             <span class="font-sans font-bold text-2xl sm:text-3xl lg:ml-7 lg:text-2xl xl:text-3xl xl:mt-2 lg:mb-2 lg:pt-2 pt-5 mb-3">Popular Job Category</span>
 
-            <div class="flex mt-2 bg-blue-100 flex-col rounded-xl lg:flex-row lg:h-[15rem] lg:justify-center lg:items-center lg:mt-0 lg:w-screen xl:h-[22rem] xl:mt-3 items-center h-[95%] lg:pt-0 w-[85%]">  
+            <div class="flex mt-2 drop-shadow-md bg-blue-100 flex-col rounded-xl lg:flex-row lg:h-[15rem] lg:justify-center lg:items-center lg:mt-0 lg:w-screen xl:h-[22rem] xl:mt-3 items-center h-[95%] lg:pt-0 w-[85%]">  
                 {{-- popular job contents teacher --}}
-                <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5 lg:ml-5   sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:h-[13rem] xl:h-[14rem] lg:mt-0 bg-boxbg bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5 lg:ml-5   sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:h-[13rem] xl:h-[14rem] lg:mt-0 bg-boxbg  shadow-md bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
                     <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem]" src="{{URL('assets/icons/man-teacher.svg')}}" alt="teacher">
                     <div class="flex justify-center items-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                         <span class="font-sans font-semibold md:text-xl text-lg lg:text-base xl:text-xl text-white">Teacher</span>
@@ -97,7 +230,7 @@
                 </div>
     
                     {{-- popular job contents fireman --}}
-                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg shadow-md  bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
                         <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem]" src="{{URL('assets/icons/firefighter.svg')}}" alt="teacher">
                         <div class="flex justify-center items-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                             <span class="font-sans font-semibold text-lg md:text-xl lg:text-base xl:text-xl md:text-center text-white">Fire Fighter</span>
@@ -110,7 +243,7 @@
                     </div>
 
                      {{-- popular job contents it specialist --}}
-                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg shadow-md  bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
                         <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem]" src="{{URL('assets/icons/laptop.svg')}}" alt="laptop">
                         <div class="flex justify-center items-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                             <span class="font-sans font-semibold text-lg md:text-xl lg:text-base xl:text-xl text-white">IT Specialist</span>
@@ -123,7 +256,7 @@
                     </div>
 
                       {{-- popular job contents it nurrse --}}
-                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:w-[25%] xl:mb-5 xl:mr-5 lg:h-[13rem] xl:h-[14rem] lg:hidden xl:flex bg-boxbg bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:w-[25%] xl:mb-5 xl:mr-5 lg:h-[13rem] xl:h-[14rem] lg:hidden xl:flex bg-boxbg shadow-md  bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
                         <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem] w-[40%]" src="{{URL('assets/icons/nurse.png')}}" alt="nurse">
                         <div class="flex justify-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                             <span class="font-sans font-semibold text-lg md:text-xl xl:text-xl text-white">Nurse</span>
@@ -136,7 +269,7 @@
                     </div>
 
                       {{-- explore all --}}
-                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5  sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-orange-500 bg-opacity-95 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5  sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem] shadow-md   lg:mt-0 sm:w-[80%] bg-orange-500 bg-opacity-95 mt-5 border-solid border-2 border-blue-600 rounded-lg">
                         <img class="h-[8rem] md:h-[10rem] lg:h-[8rem] xl:h-[9rem] w-[100%]" src="{{URL('assets/icons/arroow.svg')}}" alt="arrow">
                         <span class="text-2xl md:text-3xl font-sans font-bold lg:text-xl xl:text-2xl  text-white">EXPLORE ALL!</span>
                      
@@ -154,25 +287,29 @@
 <div class=" flex flex-col justify-center items-center h-[68rem] lg:h-auto lg:flex-col  lg:float-left max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full lg:w-[55%] mt-2 border-solid border-2 border-blue-500">
 
     {{-- feature video content --}}
-    <div class="flex flex-col items-center h-[33rem] lg:h-[25rem] w-[90%] border-solid border-2 border-pink-600">
-        <span class="text-2xl mt-2 font-sans font-bold">Featured Videos</span>
+    <div class="flex flex-col items-center h-[33rem] lg:h-[25rem] w-[90%] border-solid border-2 border-sky-50 shadow-md">
 
+        <span class="mt-2 text-center font-sans font-bold text-lg">Featured Videos</span>
+       
         {{-- featured video container 1 --}}
-        <div class="h-[13rem] lg:h-[10rem] mt-3 rounded-lg w-[90%] border-solid border-2 border-red-500">
+        <div class="h-[13rem] lg:h-[10rem] relative mt-2 rounded-lg w-[90%] border-solid border-2 border-sky-50 shadow-md">
 
+            {{-- <iframe class="h-full w-full rounded-lg object-cover" src="https://youtu.be/mPf1EOcuJiw">
+            </iframe> --}}
+            <iframe class="h-full w-full object-contain rounded-md" src="https://www.youtube.com/embed/mPf1EOcuJiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
          {{-- featured video container 2 --}}
-         <div class="h-[13rem] lg:h-[10rem] mt-3 rounded-lg w-[90%] border-solid border-2 border-red-500">
-          
+         <div class="h-[13rem] lg:h-[10rem] mt-3 rounded-lg w-[90%] border-solid border-2 border-sky-50 shadow-md">
+            <iframe class="h-full w-full object-contain rounded-md" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2Fcivilservicegovph%2Fvideos%2F287999550472969%2F&show_text=true&width=560&t=0" frameborder="0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
          </div>
         
       
     </div>
  
     {{-- //social media container --}}
-    <div class="flex justify-center h-[30rem] max-w-screen-sm mt-5 w-[90%] rounded-lg border-solod border-2 border-red-500">
-        <span class=" mt-5 text-2xl font-sans font-bold">social media page</span>
+    <div class="flex justify-center items-center h-[30rem] max-w-screen-sm mt-5 w-[70%] sm:w-[80%] relative rounded-lg border-solod border-2 border-sky-50 shadow-md">
+        <iframe class="h-full w-full object-contain rounded-md" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fcivilservicegovph%2F%3Fref%3Dembed_page&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" framdeborder="0" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
      </div>
 </div>
             <hr class="flex md:hidden h-10 w-full border-t-2 border-gray-300 mt-2 absolute">
@@ -190,32 +327,53 @@
 
 
             {{-- csc activities with links container --}}
-            <div class="flex flex-col items-center h-[58rem] w-[80%] md:w-[55%] lg:w-full border-solid border-2 border-red-600">
+            <div class="flex flex-col items-center h-[58rem] w-[80%] md:w-[55%] py-5 lg:w-full border-solid border-2 border-red-600">
 
             {{-- csc acitvity 1 --}}
-            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-full lg:h-[8rem] border-solid border-2 border-red-500">
-            <span class=" text-2xl font-sans font-bold">csc activity 1</span>
+            <div class="flex justify-center items-center h-[10rem] w-[80%] lg:w-[80%] relative lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+               {{-- <span class=" text-2xl font-sans font-bold">csc activity 1</span> --}}
+               
+                <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/csevs_logo.png')}}" alt="csevs">
+    
+               
+
             </div>
 
             {{-- csc acitvity 2 --}}
-            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-full lg:h-[8rem] border-solid border-2 border-red-500">
-            <span class="  text-2xl font-sans font-bold">csc activity 2</span>
+            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-[80%] lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+            {{-- <span class="  text-2xl font-sans font-bold">csc activity 2</span> --}}
+            <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/ccharter.png')}}" alt="ccharter">
             </div>
 
             {{-- csc acitvity 3 --}}
-            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-full lg:h-[8rem] border-solid border-2 border-red-500">
-            <span class="  text-2xl font-sans font-bold">csc activity 3</span>
+            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-[80%] lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+            {{-- <span class="  text-2xl font-sans font-bold">csc activity 3</span> --}}
+            <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/trainingca.png')}}" alt="traningca">
             </div>
 
             {{-- csc acitvity 4 --}}
-            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-full lg:h-[8rem] border-solid border-2 border-red-500">
-            <span class=" text-2xl font-sans font-bold">csc activity 4</span>
+            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-[80%] lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+            {{-- <span class=" text-2xl font-sans font-bold">csc activity 4</span> --}}
+            <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/oras.png')}}" alt="oras">
             </div>
 
             {{-- csc acitvity 5 --}}
-            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-full lg:h-[8rem] border-solid border-2 border-red-500">
-            <span class="  text-2xl font-sans font-bold">csc activity 5</span>
+            <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-[80%] lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+            {{-- <span class="  text-2xl font-sans font-bold">csc activity 5</span> --}}
+            <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/saln.png')}}" alt="saln">
             </div>
+
+             {{-- csc acitvity 6 --}}
+             <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-[80%] lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+                {{-- <span class="  text-2xl font-sans font-bold">csc activity 5</span> --}}
+                <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/comex.png')}}" alt="comex">
+                </div>
+
+                 {{-- csc acitvity 7 --}}
+             <div class="flex justify-center items-center h-[10rem] mt-5 w-[80%] lg:w-[80%] lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
+                {{-- <span class="  text-2xl font-sans font-bold">csc activity 5</span> --}}
+                <img class="h-full w-full object-fit" src="{{URL('assets/images/government-logo/examresult.png')}}" alt="examresult">
+                </div>
 
             </div>
             </div>
@@ -255,5 +413,61 @@
  
    
     @include('components/footer')
+
+    
+<script>
+    // Add the JavaScript code here
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all carousel items
+      const carouselItems = document.querySelectorAll('[data-te-carousel-item]');
+      
+      // Get the prev and next buttons
+      const prevButton = document.querySelector('[data-te-slide="prev"]');
+      const nextButton = document.querySelector('[data-te-slide="next"]');
+  
+      // Set the current active slide index
+      let activeSlide = 0;
+  
+      // Function to advance to the next slide
+      const nextSlide = () => {
+        carouselItems[activeSlide].classList.add('hidden');
+        activeSlide = (activeSlide + 1) % carouselItems.length;
+        carouselItems[activeSlide].classList.remove('hidden');
+      };
+  
+      // Function to go to the previous slide
+      const prevSlide = () => {
+        carouselItems[activeSlide].classList.add('hidden');
+        activeSlide = (activeSlide - 1 + carouselItems.length) % carouselItems.length;
+        carouselItems[activeSlide].classList.remove('hidden');
+      };
+  
+      // Start the auto-advance timer
+      let interval = setInterval(nextSlide, 4000); // Adjust the duration (in milliseconds) as needed
+  
+      // Function to stop the auto-advance on user interaction
+      const stopAutoAdvance = () => clearInterval(interval);
+  
+      // Bind the stopAutoAdvance function to user interactions
+      const carousel = document.getElementById('carouselExampleControls');
+      carousel.addEventListener('mouseenter', stopAutoAdvance);
+      carousel.addEventListener('mouseleave', () => {
+        interval = setInterval(nextSlide, 4000); // Restart the auto-advance when the mouse leaves the carousel
+      });
+  
+      // Bind the nextSlide function to the next button click
+      nextButton.addEventListener('click', () => {
+        nextSlide();
+        stopAutoAdvance(); // Stop auto-advance on button click
+      });
+  
+      // Bind the prevSlide function to the prev button click
+      prevButton.addEventListener('click', () => {
+        prevSlide();
+        stopAutoAdvance(); // Stop auto-advance on button click
+      });
+    });
+  </script>
+  
 </body>
 </html>

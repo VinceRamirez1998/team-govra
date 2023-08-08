@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/login', function () {
@@ -26,6 +26,16 @@ Route::get('/signup', function () {
 Route::get('/user-index', function () {
     return view('user-index');
 });
+
+Route::get('/find-jobs', function () {
+    return view('find-jobs');
+});
+
+Route::get('/government', function () {
+    return view('government');
+});
+
+
 Route::get('job-offers-user', function () {
     return view('user/job-offers-user');
 });

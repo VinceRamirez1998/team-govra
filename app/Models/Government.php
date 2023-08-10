@@ -28,4 +28,11 @@ class Government extends Model
     {
         return $this->belongsTo(related: User::class);
     }
+
+    public function getLogo(){
+        if(str_starts_with(request()->url(), 'http')){
+            return $this->logo;
+        }
+        return '/storage/>logo';
+    }
 }

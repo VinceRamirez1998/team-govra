@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\HTTP\Controllers\GovernmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,9 +36,10 @@ Route::get('/government', function () {
 });
 
 
-Route::get('job-offers-user', function () {
-    return view('user/job-offers-user');
-});
+Route::get('job-offers-user',[GovernmentController::class, 'index'])->name('user/job-offers-user');
+// Route::get('job-offers-user', function () {
+//     return view('user/job-offers-user');
+// });
 Route::get('job-clicked-user', function () {
     return view('user/job-clicked-user');
 });

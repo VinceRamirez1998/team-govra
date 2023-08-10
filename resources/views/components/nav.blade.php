@@ -35,7 +35,7 @@
         <a href="#" class=" text-white text-xl hover:text-slate-950 duration-500 font-sans font-semibold">HOME</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-white text-xl hover:text-slate-950 duration-500 font-sans font-semibold">FIND JOBS</a>
+        <a href="/job-offers-user" class="text-white text-xl hover:text-slate-950 duration-500 font-sans font-semibold">FIND JOBS</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
         <a href="#" class="text-white text-xl hover:text-slate-950 duration-500 font-sans font-semibold" >GOVERNMENT</a>

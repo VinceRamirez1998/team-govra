@@ -1,13 +1,4 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ediwow</title>
-    @vite('resources/css/app.css')
- </head>
- <body>
+
     <div class=" flex w-full h-16 justify-start items-center mt-24 sm:mt-24 md:mt-36 lg:mt-24 xl:mt-24  gap-5 sm:gap-7 md:gap-10 lg:gap-20 bg-blue-500 border-solid border-2 border-blue-500">
         <span class="ml-5 xl:ml-44 lg:ml-24 md:ml-24 sm:ml-16 font-sans font-semibold text-white text-xs sm:text-base" >Highlights</span>
         <span class="font-sans font-semibold text-white text-xs sm:text-base w-[20rem] sm:w-[22rem] lg:w-[20rem]">Goverment Directory</span>
@@ -25,6 +16,5 @@
             </form>
     
     </div>
- </body>
- </html>{{-- second header --}}
+ 
  

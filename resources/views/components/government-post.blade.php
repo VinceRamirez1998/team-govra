@@ -17,11 +17,11 @@
                 <span class="font-sans font-bold text-lg sm:text-xl xl:mb-1 xl:text-2xl">{{ $post->name }}</span>
                 <span class="font-sans font-bold text-sm sm:text-base xl:text-lg ">Job Offer</span>
                 <span class="font-sans font-bold text-sm sm:text-base xl:text-lg">Available Slot</span>
-                <span class="font-sans font-bold text-sm sm:text-base  text-blue-400">See more details </span>
+                <a href="{{url('/job-clicked-user', $post->id)}}"><span class="font-sans font-bold text-sm sm:text-base  text-blue-400">See more details </span></a>
             </div>
             
         </div>
-  
+        {{-- {{job-clicked-user, $post->id}} --}}
        
 
 

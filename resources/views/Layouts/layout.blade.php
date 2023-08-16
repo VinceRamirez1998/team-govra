@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    @include('components/nav-user')
+    @include('components/nav')
     @include('components/highlights-directory-nav')
     <div class=" flex w-full h-auto justify-start items-center  gap-5 sm:gap-7 md:gap-10 lg:gap-20  border-solid border-2 border-blue-500">
        

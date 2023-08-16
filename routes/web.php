@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\GovernmentController;
+use App\HTTP\Controllers\UserController;
+use App\Models\Users;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,9 +43,7 @@ Route::get('job-offers-user',[GovernmentController::class, 'index'])->name('user
 // Route::get('job-offers-user', function () {
 //     return view('user/job-offers-user');
 // });
-Route::get('job-clicked-user', function () {
-    return view('user/job-clicked-user');
-});
+Route::get('job-clicked-user/{id}', [UserController::class, 'fetch'])->name('user/job-clicked-user');
 Route::get('government-job-offers', function () {
     return view('user/government-job-offers');
 });

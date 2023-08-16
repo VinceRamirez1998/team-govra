@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Government;
 use App\Http\Controllers\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 use PhpParser\Node\Expr\BinaryOp\NotEqual;
 use PHPUnit\Framework\Constraint\Operator;
@@ -16,16 +17,23 @@ class GovernmentController extends Controller
      */
     public function index(): View
     {
-    //     $posts = Government::query()
-    //     ->where(column: 'active', operator: '=', value: 1)
-    //    ->whereDate('created_at', '<' , \Carbon\Carbon::now());
-    //     return view('user/job-offers-user', compact('posts'));
-    $posts = Government::query('governments')
+            //     $posts = Government::query()
+         //     ->where(column: 'active', operator: '=', value: 1)
+         //    ->whereDate('created_at', '<' , \Carbon\Carbon::now());
+         //     return view('user/job-offers-user', compact('posts'));
+         $posts = Government::query('governments')
                 ->where('active', 1)
                 ->get();
-          
+
+
             return view('user/job-offers-user', compact('posts'));
+         
+         
     }
+
+    
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -48,7 +56,7 @@ class GovernmentController extends Controller
      */
     public function show(Government $government)
     {
-        //
+   
     }
 
     /**

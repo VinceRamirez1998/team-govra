@@ -82,7 +82,9 @@
     
     
     <div class=" ml-[10px] justify-center  border-none border-8 w-[1000px] h-[500px] ">
-      <div class="justify-center border-solid border-8 border-black w-[700px] h-[220px]  "><h1 class="font-sans md:font-serif mt-5 ml-[100px] flex justify-center font-semibold text-[30px] ">Announcement</h1></div>
+      <div class="justify-center border-solid border-8 border-black w-[700px] h-[220px]  "><h1 class="font-sans md:font-serif mt-5 ml-[100px] flex justify-center font-semibold text-[30px] ">Announcement</h1>
+      
+      </div>
       <div class="justify-center border-solid border-8 border-black w-[700px] h-[220px] mt-[10px] "><h1 class="font-sans md:font-serif mt-5 ml-[100px] flex justify-center font-semibold text-[30px] ">Examination Advisories</h1></div>
     </div>
    

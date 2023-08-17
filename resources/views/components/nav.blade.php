@@ -66,7 +66,7 @@
         <a href="#" class="text-white text-xl hover:text-slate-950 duration-500font-sans font-semibold">CONTACT</a>
       </li>
       <li class="ml-4 my-6 md:my-0">
-        <a href="#" class="text-white text-xl hover:text-slate-950 duration-500 font-sans font-semibold">LOGIN</a>
+        <a href="/login" class="text-white text-xl hover:text-slate-950 duration-500 font-sans font-semibold">LOGIN</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
       

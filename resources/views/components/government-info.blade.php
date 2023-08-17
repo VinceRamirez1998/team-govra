@@ -24,12 +24,12 @@
 {{-- government details container --}}
 <div class="flex flex-col justify-center items-center">
       {{-- government overview details --}}
-<div class="h-[11rem] md:h-[12rem] w-full xl:w-[90%] flex flex-col  bg-bgcolor 2xl:mb-20 mb-48">
+<div class="h-auto w-full xl:w-[90%] flex flex-col  bg-bgcolor  border-solid border-2 border-red-500">
     <span class="text-lg font-sans font-bold pt-2 mb-2 sm:pt-3 sm:text-xl md:text-2xl xl:text-3xl pl-3">Government Overview</span>
-    <p class="px-3 indent-7 text-justify text-sm sm:text-base md:text-lg xl:text-xl">{{ $details->overview }}</p>
+    <p class="px-3 indent-7 text-justify text-sm sm:text-base md:text-lg xl:text-xl border-solid border-2 border-green-400">{{ $details->overview }}</p>
 </div>
 
-<div class="flex flex-col justify-center items-center lg:gap-12  lg:flex lg:flex-row">
+<div class="flex flex-col justify-center items-center lg:gap-12 mt-5  lg:flex lg:flex-row">
           {{-- government-VISION --}}
           <div class="flex items-center h-[14rem] sm:h-[17rem] lg:h-[18rem] xl:h-[19rem] w-[90%] sm:w-[80%] md:w-[70%] lg:w-[45%] sm:mt-12 border-sky-50 bg-gray-50 bg-opacity-40  shadow-lg mb-2  relative rounded-md mt-10 border-solid border-2  flex-col">
             {{-- eye-icon-container --}}
@@ -74,7 +74,7 @@
                 <div class="flex justify-center items-center ml-5 h-[4.5rem] sm:h-[5.5rem] w-20 sm:w-[5.5rem]  border-solid border-2 border-sky-50 shadow-sm rounded-[50%] bg-iconbg">
                     <img class="h-[55%] w-[70%] object-contain" src="{{URL('assets/icons/location-icon.svg')}}" alt="location">
                 </div>
-                <div class="h-[6rem] sm:h-[6.5rem] 2xl:h-[8rem]  sm:w-[12rem] mt-6  md:w-[14rem] lg:w-[11rem] 2xl:w-[65%] border-solid border-2 border-green-600">
+                <div class="h-[6rem] sm:h-[6.5rem] 2xl:h-[8rem]  mt-1 w-[70%] border-solid border-2 border-green-600">
                     <span class="text-sm font-sans font-bold mb-1 sm:text-base md:text-lg">Location</span><br>
                     <span class="text-xs text-justify font-sans font-bold mb-1 sm:text-sm md:text-base 2xl:text-xs ">{{ $details->location }} </span>
                 </div>

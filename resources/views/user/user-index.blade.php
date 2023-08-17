@@ -20,6 +20,8 @@
     {{-- banner and announcements container --}}
     <div class="flex items-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl xl:flex-row xl:h-[25rem] flex-col border-solid border-2 border-green-700 h-[29rem] md:h-[53rem] lg:h-[40rem] w-full">
 
+     
+
         {{-- banner container --}}
         <div class="hidden md:flex border-solid border-2 relative border-sky-50 shadow-md mt-5 w-[90%] lg:w-[80%] xl:w-[50%] xl:mr-10 xl:ml-28 xl:mb-4 xl:h-70 h-auto">
 
@@ -159,15 +161,25 @@
         
         
         <div class="flex flex-col w-full justify-center items-center lg:flex lg:flex-row lg:gap-10 lg:w-full xl:items-start xl:justify-start xl:gap-2 xl:flex-col xl:w-[30%] xl:mr-10 xl:h-[22rem] xl:mb-4  lg:mt-5 lg:justify-center lg:items-center lg:h-[19rem]">
-            {{-- announcements container --}}
-                <div class="border-solid border-2 border-red-600 mt-5 w-[90%] lg:w-[25rem] xl:w-full lg:mt-0 h-48 md:h-56">
-                 <span class=" flex justify-center md:justify-start md:pl-4 md:h-10 md:text-center md:pt-1 text-white text-center w-full bg-red-600 h-8 text-xl font-sans font-bold">Announcements</span>
-                </div>
+          <div class="border-solid border-2 border-red-600 mt-5 w-[90%] lg:w-[25rem] xl:w-full lg:mt-0 h-48 md:h-56">
+            <span class=" flex justify-center md:justify-start md:pl-4 md:h-10 md:text-center md:pt-1 text-white text-center w-full bg-red-600 h-8 text-xl font-sans font-bold">announcements</span>
+          
+     
+      <x-announcements>
 
-            {{-- examinations advisories container --}}
-                <div class="border-solid border-2 border-red-600 mt-5 w-[90%] lg:w-[25rem] lg:mt-0 xl:w-full h-48 md:h-56">
-                  <span class=" flex justify-center md:justify-start md:pl-4 md:h-10 md:text-center md:pt-1 text-white text-center w-full bg-red-600 h-8 text-xl font-sans font-bold">Examination Advisories</span>
-                </div>
+      </x-announcements>
+    
+      
+    
+       
+         
+       
+
+          
+          </div>
+
+           <x-examination />
+      
 
         </div>
        
@@ -284,7 +296,7 @@
     <div class="none  lg:flex lg:flex-row border-solid border-2 border-orange-600 relative">
 {{-- featured video container --}}
 
-<div class=" flex flex-col justify-center items-center h-[68rem] lg:h-auto lg:flex-col  lg:float-left max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full lg:w-[55%] mt-2 border-solid border-2 border-blue-500">
+<div class=" flex flex-col flex-start items-center h-auto lg:h-auto lg:flex-col  lg:float-left max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full lg:w-[55%] mt-2 border-solid border-2 border-blue-500">
 
     {{-- feature video content --}}
     <div class="flex flex-col items-center h-[33rem] lg:h-[25rem] w-[90%] border-solid border-2 border-sky-50 shadow-md">
@@ -315,19 +327,31 @@
             <hr class="flex md:hidden h-10 w-full border-t-2 border-gray-300 mt-2 absolute">
 
             {{-- new and update container --}}
-            <div class="flex justify-center mt-2 items-center w-screen h-[32rem]  lg:justify-center lg:h-auto border-solid border-2 border-blue-600">
-                <div class="flex justify-center rounded-lg h-[30rem] lg:h-[98%] w-[90%] lg:w-[95%] border-solid border-2 border-red-600">
+            <div class="flex justify-center mt-2 items-center w-full 2xl:w-[55%]  h-auto  lg:justify-center lg:h-auto border-solid border-2 border-blue-600">
+                <div class="flex items-center flex-col rounded-lg h-auto lg:h-[98%] w-[90%] lg:w-[95%] border-solid border-2 border-red-600 pb-12">
+
                     <span class="text-white text-center w-full bg-red-600 h-9 text-2xl font-sans font-bold xl:text-start xl:pl-5 xl:h-11 xl:justify-center xl:items-center xl:text-2xl xl:pt-1">News and Updates</span>
+                    @foreach ($NP as $items)
+                    <x-news-updates :items="$items">
+              
+                 
+                        
+                    </x-news-updates>
+                   
+                    @endforeach
+                   
                 </div>
+
+                
             </div>
           
 
             {{-- csc activities with links --}}
-            <div class="flex justify-center items-center h-[60rem] float-left w-full lg:w-[35%] lg:mt-2 border-solid border-2 border-blue-800">
+            <div class="flex justify-center flex-start h-auto float-left w-full lg:w-[35%] lg:mt-2 border-solid border-2 border-blue-800">
 
 
             {{-- csc activities with links container --}}
-            <div class="flex flex-col items-center h-[58rem] w-[80%] md:w-[55%] py-5 lg:w-full border-solid border-2 border-red-600">
+            <div class="flex flex-col items-center h-auto w-[80%] md:w-[55%] py-5 lg:w-full border-solid border-2 border-red-600">
 
             {{-- csc acitvity 1 --}}
             <div class="flex justify-center items-center h-[10rem] w-[80%] lg:w-[80%] relative lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">

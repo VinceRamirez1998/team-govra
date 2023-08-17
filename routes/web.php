@@ -2,7 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\GovernmentController;
+use App\Http\Controllers\NewsUpdateController;
 use App\HTTP\Controllers\UserController;
+use App\HTTP\Controllers\TextWidgetController;
+use App\Models\NewsUpdates;
+use App\Models\TextWidget;
 use App\Models\Users;
 
 /*
@@ -26,9 +30,7 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
-Route::get('/user-index', function () {
-    return view('user-index');
-});
+Route::get('/user-index', [NewsUpdateController::class, 'index'])->name('user/user-index');
 
 Route::get('/find-jobs', function () {
     return view('find-jobs');
@@ -39,11 +41,11 @@ Route::get('/government', function () {
 });
 
 
-Route::get('job-offers-user',[GovernmentController::class, 'index'])->name('user/job-offers-user');
+Route::get('/job-offers-user',[GovernmentController::class, 'index'])->name('user/job-offers-user');
 // Route::get('job-offers-user', function () {
 //     return view('user/job-offers-user');
 // });
-Route::get('job-clicked-user/{id}', [UserController::class, 'fetch'])->name('user/job-clicked-user');
+Route::get('/job-clicked-user/{id}', [UserController::class, 'fetch'])->name('user/job-clicked-user');
 Route::get('government-job-offers', function () {
     return view('user/government-job-offers');
 });

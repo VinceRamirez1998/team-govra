@@ -25,7 +25,8 @@ class Government extends Model
     ];
 
     
-  
+   
+
 
     public function user():BelongsTo
     {
@@ -38,5 +39,7 @@ class Government extends Model
         }
         return '/storage/>logo';
     }
+
+   
 
 }

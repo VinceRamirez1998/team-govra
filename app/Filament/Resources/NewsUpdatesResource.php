@@ -32,9 +32,6 @@ class NewsUpdatesResource extends Resource
                         Forms\Components\TextInput::make('title')
                         ->maxLength(255)
                         ->required(),
-                        Forms\Components\TextInput::make('published')
-                        ->maxLength(255)
-                        ->required(),
                         Forms\Components\RichEditor::make('content')
                         ->maxLength(2048)
                         ->required(),

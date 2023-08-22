@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    @vite('resources/css/app.css')
+
 </head>
 <body>
     @include('components/nav-user')
     @include('components/highlights-directory-nav')
 
     <div class="flex flex-col justify-center items-center mt-1 h-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl">
-
+    
+              
+                 
+                        
+       
+  
          {{-- government details container --}}
          <div class="flex items-center justify-center gap-5 h-[11rem] sm:h-[13rem] md:h-[14rem] xl:h-[15rem] xl:gap-20 2xl:h-[16rem] w-full bg-bgcolor">
             {{-- government logo here --}}
@@ -31,7 +38,7 @@
                 <a href="/government-job-offers"><li class="text-xs sm:text-base md:text-lg font-sans font-bold  text-blue-500 underline decoration-blue-500 underline-offset-4 decoration-2 ">Jobs Offer</li></a>
                 <a href="/government-reviews"><li class="text-xs sm:text-base md:text-lg font-sans font-bold">Reviews</li></a>
             </ul>
-    
+            
         </div>
 
         <span class="text-xl sm:text-2xl lg:text-3xl font-sans font-semibold mt-5 text-center">Jobs Hiring</span>
@@ -46,7 +53,7 @@
                 <span class="text-sm sm:text-xl xl:text-2xl gap-4 font-sans font-semibold flex justify-center items-center ml-8 mt-2 text-blue-500"><img class="h-[2.5rem] sm:h-[2.8rem] xl:h-[3.5rem]" src="{{URL('assets/icons/currency-dollar.svg')}}" alt="requirements">Click here for more information</span>
             </div>
 
-
+    
            {{-- job-details --}}
            <div class="flex flex-col justify-start items-start w-[90%] sm:w-[75%] md:w-[65%] lg:w-full lg:border-x-0 lg:rounded-none lg:pl-20 xl:pl-24 h-[13rem] sm:h-[14rem] md:h-[15rem] xl:h-[17rem]  border-solid border-2 border-sky-50 rounded-md bg-gray-50 shadow-lg">
             <span class="text-lg sm:text-2xl xl:text-3xl font-sans font-semibold mt-5 ml-5">Job Position:</span>

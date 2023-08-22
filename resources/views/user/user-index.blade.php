@@ -8,17 +8,17 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    @include('components/nav')
+    @include('components/nav-user')
     
     
     {{-- csc banner logo --}}
 
-    <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:flex lg:max-w-screen-xl  md:justify-center md:items-center lg:justify-center lg:items-center xl:max-w-screen-2xl xl:justify-start xl:items-center justify-start items-center w-full h-40 mt-20 border-solid border-2 border-l-blue-600 z-0">
-     <img class="h-[6rem] w-[100%] lg:border-solid lg:border-2 lg:border-red-700 md:w-[80%] lg:w-[80%] xl:w-[55%] xl:ml-20 xl:h-[8rem] " src="{{URL('assets/images/csc-logo-03.png')}}" alt="cscbannerlogo">   
+    <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:flex lg:max-w-screen-xl  md:justify-center md:items-center lg:justify-center lg:items-center xl:max-w-screen-2xl xl:justify-start xl:items-center justify-start items-center w-full h-40 mt-20 border-solid border-y-2 border-l-blue-600 z-0">
+     <img class="h-[6rem] w-[100%] md:w-[80%] lg:w-[80%] xl:w-[55%] xl:ml-20 xl:h-[8rem] " src="{{URL('assets/images/csc-logo-03.png')}}" alt="cscbannerlogo">   
     </div>
 
     {{-- banner and announcements container --}}
-    <div class="flex items-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl xl:flex-row xl:h-[25rem] flex-col border-solid border-2 border-green-700 h-[29rem] md:h-[53rem] lg:h-[40rem] w-full">
+    <div class="flex items-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl xl:flex-row xl:h-[25rem] flex-col h-[29rem] md:h-[53rem] lg:h-[40rem] w-full">
 
      
 
@@ -35,14 +35,14 @@
     class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
     <!--First item-->
     <div
-      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none border-solid border-2 border-red-400"
+      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-item
       data-te-carousel-active>
       {{-- <img
         src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
         class="block w-full"
         alt="Wild Landscape" /> --}}
-        <img src="{{URL('assets/images/Online_Zumba_and_Film_Showing.png')}}" alt="onlinezumba" class="block w-full h-full object-cover border-solid border-2 border-green-300" />
+        <img src="{{URL('assets/images/Online_Zumba_and_Film_Showing.png')}}" alt="onlinezumba" class="block w-full h-full object-cover" />
     </div>
     <!--Second item-->
     <div
@@ -187,14 +187,14 @@
     </div>
 
     {{-- banner-content container  --}}
-    <div class="flex lg:flex-row max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl items-center flex-col h-[30rem] border-solid border-2 border-orange-600 w-full ">
-        <div class="flex flex-col justify-center items-center border-solid border-2 border-red-600 h-[25rem] w-[90%] md:w-[80%] lg:w-[50%] lg:mt-0 mt-10">
+    <div class="flex lg:flex-row max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl items-center flex-col h-[30rem] w-full ">
+        <div class="flex flex-col justify-center items-center h-[25rem] w-[90%] md:w-[80%] lg:w-[50%] lg:mt-0 mt-10">
             <span class="text-3xl font-sans font-semibold sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl">FIND YOUR DREAM</span>
             <span class="text-3xl font-sans font-semibold mt-3 sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl">JOB TODAY</span>
             <span class="text-lg font-sans font-semibold mt-3 sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl">Explore all the most exciting job</span>
             <span class="text-lg font-sans font-semibold sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl">roles based on your career!</span>
 
-            <div class="flex flex-row items-center justify-center w-[90%] lg:w-[80%] xl:w-[60%] h-[7rem] bg-blue-50 rounded-md border-solid border-2 border-red-600 mt-7 px-4">
+            <div class="flex flex-row items-center justify-center w-[90%] lg:w-[80%] xl:w-[60%] h-[7rem] bg-blue-50 mt-7 px-4">
                 <div class="flex flex-col">
                     <label class="font-sans font-semibold sm:text-lg md:text-xl lg:text-lg" for="location">Location</label>
                 <input type="password" name="password" id="password" required class="relative h-[1.8rem] sm:h-[2rem] md:h-[2.5rem] lg:h-[1.8rem] max-w-full w-[100%] mr-5  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md focus:ring-1 mb-3" placeholder="Enter location" />
@@ -215,7 +215,7 @@
         
         </div>
 
-        <div class="hidden lg:flex lg:h-[25rem] w-[50%] justify-center items-center border-solid border-2 border-red-800">
+        <div class="hidden lg:flex lg:h-[25rem] w-[50%] justify-center items-center">
 
             <img class="xl:w-[80%]" src="{{URL('assets/images/img-banner.png')}}" alt="">
         </div>
@@ -223,13 +223,13 @@
     </div>
 
      {{-- popular job container --}}
-     <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl flex-col items-center  w-full h-[80rem] sm:h-[90rem] md:h-[95rem] lg:h-[21rem] xl:h-[25rem] border-solid border-2 border-blue-500">
+     <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl flex-col items-center  w-full h-[80rem] sm:h-[90rem] md:h-[95rem] lg:h-[21rem] xl:h-[25rem]">
         <div class="flex flex-col items-center h-[80rem]  sm:h-[90rem] md:h-[95rem] w-[90%] lg:flex-col lg:w-screen lg:flex lg:justify-start lg:items-start lg:h-[21rem] mt-2">
             <span class="font-sans font-bold text-2xl sm:text-3xl lg:ml-7 lg:text-2xl xl:text-3xl xl:mt-2 lg:mb-2 lg:pt-2 pt-5 mb-3">Popular Job Category</span>
 
             <div class="flex mt-2 drop-shadow-md bg-blue-100 flex-col rounded-xl lg:flex-row lg:h-[15rem] lg:justify-center lg:items-center lg:mt-0 lg:w-screen xl:h-[22rem] xl:mt-3 items-center h-[95%] lg:pt-0 w-[85%]">  
                 {{-- popular job contents teacher --}}
-                <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5 lg:ml-5   sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:h-[13rem] xl:h-[14rem] lg:mt-0 bg-boxbg  shadow-md bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5 lg:ml-5   sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:h-[13rem] xl:h-[14rem] lg:mt-0 bg-boxbg  shadow-md bg-opacity-50 mt-5  rounded-lg">
                     <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem]" src="{{URL('assets/icons/man-teacher.svg')}}" alt="teacher">
                     <div class="flex justify-center items-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                         <span class="font-sans font-semibold md:text-xl text-lg lg:text-base xl:text-xl text-white">Teacher</span>
@@ -242,7 +242,7 @@
                 </div>
     
                     {{-- popular job contents fireman --}}
-                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg shadow-md  bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg shadow-md  bg-opacity-50 mt-5  rounded-lg">
                         <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem]" src="{{URL('assets/icons/firefighter.svg')}}" alt="teacher">
                         <div class="flex justify-center items-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                             <span class="font-sans font-semibold text-lg md:text-xl lg:text-base xl:text-xl md:text-center text-white">Fire Fighter</span>
@@ -255,7 +255,7 @@
                     </div>
 
                      {{-- popular job contents it specialist --}}
-                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg shadow-md  bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                    <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5   sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem]  lg:mt-0 sm:w-[80%] bg-boxbg shadow-md  bg-opacity-50 mt-5  rounded-lg">
                         <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem]" src="{{URL('assets/icons/laptop.svg')}}" alt="laptop">
                         <div class="flex justify-center items-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                             <span class="font-sans font-semibold text-lg md:text-xl lg:text-base xl:text-xl text-white">IT Specialist</span>
@@ -268,7 +268,7 @@
                     </div>
 
                       {{-- popular job contents it nurrse --}}
-                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:w-[25%] xl:mb-5 xl:mr-5 lg:h-[13rem] xl:h-[14rem] lg:hidden xl:flex bg-boxbg shadow-md  bg-opacity-50 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] sm:h-[15rem] md:h-[16rem] sm:w-[80%] lg:w-[25%] xl:mb-5 xl:mr-5 lg:h-[13rem] xl:h-[14rem] lg:hidden xl:flex bg-boxbg shadow-md  bg-opacity-50 mt-5  rounded-lg">
                         <img class="h-[6rem] md:h-[7rem] lg:h-[5rem] xl:h-[6rem] w-[40%]" src="{{URL('assets/icons/nurse.png')}}" alt="nurse">
                         <div class="flex justify-center mt-2 h-8 md:h-10 bg-darkb w-full border-solid border-2 border-red-400  (0,34,51)">
                             <span class="font-sans font-semibold text-lg md:text-xl xl:text-xl text-white">Nurse</span>
@@ -281,7 +281,7 @@
                     </div>
 
                       {{-- explore all --}}
-                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5  sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem] shadow-md   lg:mt-0 sm:w-[80%] bg-orange-500 bg-opacity-95 mt-5 border-solid border-2 border-blue-600 rounded-lg">
+                      <div class="flex flex-col justify-center items-center h-[13rem] w-[85%] lg:w-[25%] lg:mr-5  sm:h-[15rem] md:h-[16rem] lg:h-[13rem] xl:h-[14rem] shadow-md   lg:mt-0 sm:w-[80%] bg-orange-500 bg-opacity-95 mt-5  rounded-lg">
                         <img class="h-[8rem] md:h-[10rem] lg:h-[8rem] xl:h-[9rem] w-[100%]" src="{{URL('assets/icons/arroow.svg')}}" alt="arrow">
                         <span class="text-2xl md:text-3xl font-sans font-bold lg:text-xl xl:text-2xl  text-white">EXPLORE ALL!</span>
                      
@@ -293,10 +293,10 @@
         </div>
     </div>
 
-    <div class="none  lg:flex lg:flex-row border-solid border-2 border-orange-600 relative">
+    <div class="none  lg:flex lg:flex-row relative">
 {{-- featured video container --}}
 
-<div class=" flex flex-col flex-start items-center h-auto lg:h-auto lg:flex-col  lg:float-left max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full lg:w-[55%] mt-2 border-solid border-2 border-blue-500">
+<div class=" flex flex-col flex-start items-center h-auto lg:h-auto lg:flex-col  lg:float-left max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full lg:w-[40%] mt-2">
 
     {{-- feature video content --}}
     <div class="flex flex-col items-center h-[33rem] lg:h-[25rem] w-[90%] border-solid border-2 border-sky-50 shadow-md">
@@ -327,7 +327,7 @@
             <hr class="flex md:hidden h-10 w-full border-t-2 border-gray-300 mt-2 absolute">
 
             {{-- new and update container --}}
-            <div class="flex justify-center mt-2 items-center w-full 2xl:w-[55%]  h-auto  lg:justify-center lg:h-auto border-solid border-2 border-blue-600">
+            <div class="flex justify-center mt-5 2xl:mt-0 items-center w-full 2xl:w-[70%] border-solid  h-auto  lg:justify-center lg:h-auto ">
                 <div class="flex items-center flex-col rounded-lg h-auto lg:h-[98%] w-[90%] lg:w-[95%] border-solid border-2 border-red-600 pb-12">
 
                     <span class="text-white text-center w-full bg-red-600 h-9 text-2xl font-sans font-bold xl:text-start xl:pl-5 xl:h-11 xl:justify-center xl:items-center xl:text-2xl xl:pt-1">News and Updates</span>
@@ -347,11 +347,11 @@
           
 
             {{-- csc activities with links --}}
-            <div class="flex justify-center flex-start h-auto float-left w-full lg:w-[35%] lg:mt-2 border-solid border-2 border-blue-800">
+            <div class="flex justify-center flex-start h-auto float-left w-full lg:w-[27%] lg:mt-2">
 
 
             {{-- csc activities with links container --}}
-            <div class="flex flex-col items-center h-auto w-[80%] md:w-[55%] py-5 lg:w-full border-solid border-2 border-red-600">
+            <div class="flex flex-col items-center h-auto w-[80%] md:w-[55%] py-5 lg:w-full">
 
             {{-- csc acitvity 1 --}}
             <div class="flex justify-center items-center h-[10rem] w-[80%] lg:w-[80%] relative lg:h-[7rem] border-solid border-2 border-sky-50 shadow-md">
@@ -410,7 +410,7 @@
 
 
     {{-- quick links --}}
-    <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl xl:h-[20rem] xl:gap-10 xl:flex-row  flex-col items-center h-[51rem] w-full border-solid border-2 border-pink-600">
+    <div class="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl xl:h-[20rem] xl:gap-10 xl:flex-row  flex-col items-center h-[51rem] w-full">
         
 
        

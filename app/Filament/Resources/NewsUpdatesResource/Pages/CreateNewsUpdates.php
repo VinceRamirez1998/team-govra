@@ -9,4 +9,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateNewsUpdates extends CreateRecord
 {
     protected static string $resource = NewsUpdatesResource::class;
+    
+    protected function getRedirectUrl(): string
+{
+    return $this->getResource()::getUrl('index');
+}
 }

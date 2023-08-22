@@ -17,4 +17,12 @@ class NewsUpdates extends Model
         
     ];
 
+    protected $casts = [
+        'created_at' => 'datetime'
+    ];
+
+    public function getFormattedDate(){
+        
+        return $this->created_at->format('F j Y');
+    }
 }

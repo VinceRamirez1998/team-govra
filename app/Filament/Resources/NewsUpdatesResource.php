@@ -52,7 +52,6 @@ class NewsUpdatesResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title'),
-                Tables\Columns\TextColumn::make('published'),
                 Tables\Columns\TextColumn::make('content')->limit(10),
                 Tables\Columns\TextColumn::make('links'),
                 Tables\Columns\TextColumn::make('updated_at')

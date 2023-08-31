@@ -164,22 +164,33 @@
           <div class="border-solid border-2 border-red-600 mt-5 w-[90%] lg:w-[25rem] xl:w-full lg:mt-0 h-48 md:h-56">
             <span class=" flex justify-center md:justify-start md:pl-4 md:h-10 md:text-center md:pt-1 text-white text-center w-full bg-red-600 h-8 text-xl font-sans font-bold">announcements</span>
           
-     
-      <x-announcements>
-
-      </x-announcements>
-    
-      
-    
-       
-         
-       
+            
 
           
+              @foreach ($announcements as $announce)
+              <x-announcement :announce="$announce">
+
+              </x-announcement>
+              @endforeach
+      
+      
+      
+  
           </div>
 
-           <x-examination />
-      
+
+          <div class="border-solid border-2 border-red-600 mt-5 w-[90%] lg:w-[25rem] lg:mt-0 xl:w-full h-48 md:h-56">
+            <span class=" flex justify-center md:justify-start md:pl-4 md:h-10 md:text-center md:pt-1 text-white text-center w-full bg-red-600 h-8 text-xl font-sans font-bold">Examinations</span>
+            
+         @foreach ($examinations as $exams)
+             <x-examinations :exams="$exams">
+
+
+             </x-examinations>
+
+         @endforeach
+                 
+         </div>
 
         </div>
        
@@ -331,7 +342,7 @@
                 <div class="flex items-center flex-col rounded-lg h-auto lg:h-[98%] w-[90%] lg:w-[95%] border-solid border-2 border-red-600 pb-12">
 
                     <span class="text-white text-center w-full bg-red-600 h-9 text-2xl font-sans font-bold xl:text-start xl:pl-5 xl:h-11 xl:justify-center xl:items-center xl:text-2xl xl:pt-1">News and Updates</span>
-                    @foreach ($NP as $items)
+                    @foreach ($newsUpdates as $items)
                     <x-news-updates :items="$items">
               
                  

@@ -66,7 +66,44 @@
     </ul>
 <h2 class=""></h2>
     </ul>
+
+  
+    {{-- profile and dropdown copnatiner --}}
+    <li class="list-none mr-28"> <div class="flex">
+      <div class="flex items-center justify-center h-11 w-11 rounded-full bg-red-500">
+        <img class=" rounded-full object-fill w-[80%]" src="{{URL('assets/images/government-logo/DepEd.svg')}}" alt="profile">
+      </div>
+     
+      <button id="dropdownHoverButtonProfile" data-dropdown-toggle="dropdownHoverProfileMenu" data-dropdown-trigger="hover" class=" inline-flex items-center" type="button"> <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg></button>
+    </div> 
+    <!-- Dropdown menu -->
+    <div id="dropdownHoverProfileMenu" class=" absolute z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButtonProfile">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mandate</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Historical Highlights</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">The Commission</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Performance Pledge</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy Policy</a>
+        </li>
+      </ul>
+    </div></li>
+
   </nav>
+
+
+
+  
 
   {{-- <div class=" w-96 h-70 mt-8">
    
@@ -109,6 +146,15 @@
     dropdown.classList.remove('hidden');
   });
 
+  
+  
+  
+
+  
+
+
+  
+
   // // Add click event listeners to each list item to handle selection
   // const listItems = dropdown.querySelectorAll('ul li a');
   // listItems.forEach((item) => {
@@ -126,3 +172,44 @@
 
 
   </script>
+
+<script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+  </script>
+
+
+
+
+{{-- profile scrript --}}
+  <script>
+  
+  // Get the button and dropdown elements
+  const buttonProfile = document.getElementById('dropdownHoverButtonProfile');
+  const dropdownMenu = document.getElementById('dropdownHoverProfileMenu');
+
+  // Show the dropdown when the button is hovered
+  button.addEventListener('mouseover', () => {
+    dropdown.classList.remove('hidden');
+  });
+
+  // Hide the dropdown when the mouse leaves the button or dropdown
+  button.addEventListener('mouseleave', () => {
+    dropdown.classList.add('hidden');
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    dropdown.classList.add('hidden');
+  });
+
+  // Prevent the dropdown from hiding when the mouse moves within the dropdown
+  dropdown.addEventListener('mouseover', () => {
+    dropdown.classList.remove('hidden');
+  });
+
+  </script>
+  
+
+ 

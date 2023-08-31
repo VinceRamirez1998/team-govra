@@ -63,12 +63,12 @@ class AnnouncementResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title'),
+                Tables\Columns\TextColumn::make('title')->limit(15),
                 Tables\Columns\TextColumn::make('announcement_no') ->limit(10),
-                Tables\Columns\TextColumn::make('for'),
-                Tables\Columns\TextColumn::make('subject'),
+                Tables\Columns\TextColumn::make('for')->limit(10),
+                Tables\Columns\TextColumn::make('subject')->limit(10),
                 Tables\Columns\TextColumn::make('content') ->limit(10),
-                Tables\Columns\TextColumn::make('content_table'),
+                Tables\Columns\TextColumn::make('content_table')->limit(15),
                 Tables\Columns\TextColumn::make('announce_contacts') ->limit(10),
                 Tables\Columns\TextColumn::make('links') ->limit(10),
                 Tables\Columns\TextColumn::make('created_at')

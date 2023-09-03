@@ -22,4 +22,10 @@ class EditNewsUpdates extends EditRecord
 {
     return $this->getResource()::getUrl('index');
 }
+
+protected function getSavedNotificationTitle(): ?string
+{
+    return 'News and Update Updated';
+}
+
 }

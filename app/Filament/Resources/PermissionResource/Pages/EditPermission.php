@@ -1,30 +1,29 @@
 <?php
 
-namespace App\Filament\Resources\UserResource\Pages;
+namespace App\Filament\Resources\PermissionResource\Pages;
 
-use App\Filament\Resources\UserResource;
+use App\Filament\Resources\PermissionResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditUser extends EditRecord
+class EditPermission extends EditRecord
 {
-    protected static string $resource = UserResource::class;
+    protected static string $resource = PermissionResource::class;
 
     protected function getActions(): array
     {
         return [
-            Actions\ViewAction::make(),
             Actions\DeleteAction::make(),
         ];
     }
 
-    //CUSTOME UPDATE TITLE
+    //CUSTOM UPDATE
     protected function getSavedNotificationTitle(): ?string
 {
-    return 'User Updated';
+    return 'Permission Updated';
 }
 
-// ROUTE IN AFTER UPDATE GO BACK IN TABLE
+//PERMISION ROUTE AFTER UPDATE
 protected function getRedirectUrl(): string
 {
     return $this->getResource()::getUrl('index');

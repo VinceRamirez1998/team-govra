@@ -42,7 +42,7 @@
         {{-- form container --}}
         <div class=" relative max-w-[80%] sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] lg:mb-[12rem] xl:mb-[13rem]  lg:h-1/2 w-full h-4/5 px-3">
         
-          <form>
+          <form method="POST" action="{{ route('signup.post')}}">
             <label class="block">
                 <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
                   Name
@@ -68,14 +68,14 @@
                 <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
                   Email
                 </span>
-                <input type="text" name="name"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter email" />
+                <input type="text" name="email"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter email" />
               </label>
 
               <label class="block">
                 <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
                   Username
                 </span>
-                <input type="text" name="name"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter username" />
+                <input type="text" name="username"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter username" />
               </label>
 
 
@@ -94,7 +94,7 @@
               
               
 
-         <button class="btn btn-orangee mt-3 bg-orange-500 hover:bg-orange-700 text-white font-bold text-md xl:text-lg py-2 px-4 rounded w-full z-10">Sign up
+         <button name="submit" class="btn btn-orangee mt-3 bg-orange-500 hover:bg-orange-700 text-white font-bold text-md xl:text-lg py-2 px-4 rounded w-full z-10">Sign up
 
          </button>
 
@@ -103,7 +103,7 @@
          
           <div class="flex mt-3">
             <span class="text-white font-sans font-extralight xl:text-lg">Have account?</span>
-           <a href="login"> <span class="text-blue-500 font-sans font-medium ml-1 xl:text-lg">Login</span></a>
+           <a href="{{url('/login')}}"> <span class="text-blue-500 font-sans font-medium ml-1 xl:text-lg">Login</span></a>
           </div>
         </div>
 

@@ -24,6 +24,10 @@ class EditGovernment extends EditRecord
 {
     return $this->getResource()::getUrl('index');
 }
+protected function getSavedNotificationTitle(): ?string
+{
+    return 'Government Updated';
+}
 
 
    

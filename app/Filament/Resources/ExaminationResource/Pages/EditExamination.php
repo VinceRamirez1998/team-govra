@@ -16,4 +16,9 @@ class EditExamination extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+
+    protected function getSavedNotificationTitle(): ?string
+{
+    return 'Examination Updated';
+}
 }

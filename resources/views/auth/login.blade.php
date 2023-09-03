@@ -74,7 +74,7 @@
 
          
           <div class="inline-flex mt-3 w-full">
-            <a href="signup"  > 
+            <a href="{{ url('/signup')}}"  > 
             <span class="text-white font-sans text-sm font-extralight xl:text-lg">Don't have account yet?</span>
            <span class="text-blue-500 text-sm font-sans font-medium ml-1 xl:text-lg">Sign up</span>
             </a>

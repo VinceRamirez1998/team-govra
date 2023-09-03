@@ -14,4 +14,9 @@ class CreateNewsUpdates extends CreateRecord
 {
     return $this->getResource()::getUrl('index');
 }
+
+protected function getCreatedNotificationTitle(): ?string
+{
+    return 'News and Updates Created';
+}
 }

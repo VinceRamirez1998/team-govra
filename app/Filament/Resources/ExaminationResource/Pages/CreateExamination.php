@@ -9,4 +9,14 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateExamination extends CreateRecord
 {
     protected static string $resource = ExaminationResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+
+    protected function getCreatedNotificationTitle(): ?string
+{
+    return 'Examination Created';
+}
 }

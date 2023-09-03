@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\GovernmentController;
 use App\Http\Controllers\NewsUpdateController;
@@ -27,12 +28,21 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/signup', function () {
-    return view('signup');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
+
+Route::get('/login', [AuthController::class, 'index'])->name('auth/login');
+
+// Route::get('/signup', function () {
+//     return view('signup');
+// });
+
+Route::get('/signup', [AuthController::class, 'signup'])->name('auth/signup');
+
+Route::post('post-signup', [AuthController::class, 'postSignup'])->name('signup.post');
+
+
 
 // Route::group([], function(){
 //     Route::get('/user-index', [NewsUpdateController::class, 'index'])->name('user/user-index');

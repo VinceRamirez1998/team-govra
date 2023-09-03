@@ -16,8 +16,8 @@ use Filament\Forms\Components\Select;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Models\Permission;
-// use Spatie\Permission\Models\Permission;
+// use App\Models\Permission;
+use Spatie\Permission\Models\Permission;
 
 class PermissionResource extends Resource
 {

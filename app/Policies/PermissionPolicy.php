@@ -58,7 +58,7 @@ class PermissionPolicy
      */
     public function restore(User $user, Permission $permission): bool
     {
-        return false;
+        
     }
 
     /**
@@ -66,6 +66,6 @@ class PermissionPolicy
      */
     public function forceDelete(User $user, Permission $permission): bool
     {
-        return false;
+        
     }
 }

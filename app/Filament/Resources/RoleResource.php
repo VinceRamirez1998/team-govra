@@ -14,8 +14,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Models\Role;
-// use Spatie\Permission\Models\Role; 
+// use App\Models\Role;
+use Spatie\Permission\Models\Role; 
 use Filament\Forms\Components\Select;
 
 

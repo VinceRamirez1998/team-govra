@@ -16,8 +16,8 @@ use Filament\Forms\Components\Select;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-// use App\Models\Permission;
-use Spatie\Permission\Models\Permission;
+use App\Models\Permission;
+// use Spatie\Permission\Models\Permission;
 
 class PermissionResource extends Resource
 {
@@ -46,7 +46,7 @@ class PermissionResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id'),
-                TextColumn::make('name'),
+                TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('created_at')->dateTime('M j, Y - h:i a')->timezone('Asia/Manila')->sortable(),
 
                 

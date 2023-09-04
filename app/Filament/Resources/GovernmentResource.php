@@ -21,7 +21,7 @@ class GovernmentResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-library';
 
-    protected static ?string $navigationGroup = 'Content';
+    protected static ?string $navigationGroup = 'Type of User';
 
     public static function form(Form $form): Form
     {

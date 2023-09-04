@@ -13,7 +13,10 @@ class AnnouncementPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -22,7 +25,10 @@ class AnnouncementPolicy
      */
     public function view(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -31,7 +37,10 @@ class AnnouncementPolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Create Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -40,7 +49,10 @@ class AnnouncementPolicy
      */
     public function update(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Update Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -49,7 +61,10 @@ class AnnouncementPolicy
      */
     public function delete(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Delete Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -58,7 +73,7 @@ class AnnouncementPolicy
      */
     public function restore(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        
         
     }
 
@@ -67,7 +82,7 @@ class AnnouncementPolicy
      */
     public function forceDelete(User $user, Announcement $announcement): bool
     {
-        return $user->hasRole('Super Admin');
+        
         
     }
 }

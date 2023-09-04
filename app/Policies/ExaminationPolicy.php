@@ -13,7 +13,10 @@ class ExaminationPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View Examination') || $user->hasPermissionTo('CRUD Examination')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -22,7 +25,10 @@ class ExaminationPolicy
      */
     public function view(User $user, Examination $examination): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View Examination') || $user->hasPermissionTo('CRUD Examination')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -31,7 +37,10 @@ class ExaminationPolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Create Examination') || $user->hasPermissionTo('CRUD Examination')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -40,7 +49,10 @@ class ExaminationPolicy
      */
     public function update(User $user, Examination $examination): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Update Examination') || $user->hasPermissionTo('CRUD Examination')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -49,7 +61,10 @@ class ExaminationPolicy
      */
     public function delete(User $user, Examination $examination): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Delete Examination') || $user->hasPermissionTo('CRUD Examination')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -58,7 +73,7 @@ class ExaminationPolicy
      */
     public function restore(User $user, Examination $examination): bool
     {
-        return $user->hasRole('Super Admin');
+        
         
     }
 
@@ -67,7 +82,7 @@ class ExaminationPolicy
      */
     public function forceDelete(User $user, Examination $examination): bool
     {
-        return $user->hasRole('Super Admin');
+    
         
     }
 }

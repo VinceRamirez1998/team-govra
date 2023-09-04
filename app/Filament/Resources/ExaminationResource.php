@@ -17,7 +17,7 @@ class ExaminationResource extends Resource
 {
     protected static ?string $model = Examination::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-pencil-alt';
 
     protected static ?string $navigationGroup = 'Widgets';
 

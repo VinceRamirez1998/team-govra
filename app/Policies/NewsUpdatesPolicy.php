@@ -13,7 +13,10 @@ class NewsUpdatesPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View News Update') || $user->hasPermissionTo('CRUD News Update')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -22,7 +25,10 @@ class NewsUpdatesPolicy
      */
     public function view(User $user, NewsUpdates $newsUpdates): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View News Update') || $user->hasPermissionTo('CRUD News Update')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -31,7 +37,10 @@ class NewsUpdatesPolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Create News Update') || $user->hasPermissionTo('CRUD News Update')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -40,7 +49,10 @@ class NewsUpdatesPolicy
      */
     public function update(User $user, NewsUpdates $newsUpdates): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Update News Update') || $user->hasPermissionTo('CRUD News Update')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -49,7 +61,10 @@ class NewsUpdatesPolicy
      */
     public function delete(User $user, NewsUpdates $newsUpdates): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Delete News Update') || $user->hasPermissionTo('CRUD News Update')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -58,7 +73,7 @@ class NewsUpdatesPolicy
      */
     public function restore(User $user, NewsUpdates $newsUpdates): bool
     {
-        return $user->hasRole('Super Admin');
+
         
     }
 
@@ -67,7 +82,7 @@ class NewsUpdatesPolicy
      */
     public function forceDelete(User $user, NewsUpdates $newsUpdates): bool
     {
-        return $user->hasRole('Super Admin');
+        
         
     }
 }

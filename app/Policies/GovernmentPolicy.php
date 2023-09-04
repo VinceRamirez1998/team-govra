@@ -13,7 +13,10 @@ class GovernmentPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View Government') || $user->hasPermissionTo('CRUD Government')){
+            return true;
+        }
+        return false;
         
     }
 
@@ -22,7 +25,11 @@ class GovernmentPolicy
      */
     public function view(User $user, Government $government): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('View Government') || $user->hasPermissionTo('CRUD Government')){
+            return true;
+        }
+        return false;
+        
         
     }
 
@@ -31,7 +38,11 @@ class GovernmentPolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Create Government') || $user->hasPermissionTo('CRUD Government')) {
+            return true;
+        }
+        return false;
+        
         
     }
 
@@ -40,7 +51,11 @@ class GovernmentPolicy
      */
     public function update(User $user, Government $government): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Update Government') || $user->hasPermissionTo('CRUD Government')){
+            return true;
+        }
+        return false;
+        
         
     }
 
@@ -49,7 +64,11 @@ class GovernmentPolicy
      */
     public function delete(User $user, Government $government): bool
     {
-        return $user->hasRole('Super Admin');
+        if($user->hasPermissionTo('Delete Government') || $user->hasPermissionTo('CRUD Government')){
+            return true;
+        }
+        return false;
+        
         
     }
 
@@ -58,7 +77,6 @@ class GovernmentPolicy
      */
     public function restore(User $user, Government $government): bool
     {
-        return $user->hasRole('Super Admin');
         
     }
 
@@ -67,7 +85,6 @@ class GovernmentPolicy
      */
     public function forceDelete(User $user, Government $government): bool
     {
-        return $user->hasRole('Super Admin');
         
     }
 }

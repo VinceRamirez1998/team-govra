@@ -13,6 +13,7 @@ use App\Models\Examination;
 use App\Models\TextWidget;
 use App\Models\Users;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,7 +51,7 @@ Route::post('post-signup', [AuthController::class, 'postSignup'])->name('signup.
 // });
 
 //totoo
-Route::get('/user-index', [UserIndexController::class, 'ShowData'])->name('user/user-index');
+// Route::get('/user-index', [UserIndexController::class, 'ShowData'])->name('user/user-index');
 
 
 // Route::controller(UserIndexController::class)->group(function() {
@@ -78,6 +79,20 @@ Route::get('/job-offers-user',[GovernmentController::class, 'index'])->name('use
 //     return view('user/job-offers-user');
 // });
 Route::get('/job-clicked-user/{id}', [UserController::class, 'fetch'])->name('user/job-clicked-user');
+Route::get('/news-updates-clicked/{id}', [UserIndexController::class,'ShowData'])->name('user/news-updates-clicked');
+Route::get('/announcements-clicked/{id}', [UserIndexController::class,'ShowAnnouncements'])->name('user/announcements-clicked');
+
+Route::controller(UserIndexController::class)->group(function() {
+    Route::get('/user-index', 'ShowData')->name('user/user-index');
+  
+    Route::get('/news-updates-clicked/{id}', 'ShowNewsUpdates')->name('user/news-updates-clicked');
+
+    Route::get('/examination-clicked/{id}', 'ShowExam')->name('user/examination-clicked');
+
+ 
+
+});
+
 Route::get('government-job-offers', function () {
     return view('user/government-job-offers');
 });

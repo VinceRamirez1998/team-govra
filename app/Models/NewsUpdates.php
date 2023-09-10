@@ -25,4 +25,6 @@ class NewsUpdates extends Model
         
         return $this->created_at->format('F j Y');
     }
+
+    
 }

@@ -1,13 +1,4 @@
-<!doctype html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
+<x-app-layout>
 
 {{-- <body class="bg-white-400">
   <nav class="text-white p-5 bg-blue-500 shadow md:flex md:items-center md:justify-between">
@@ -153,7 +144,5 @@
     <script type="module" src="/resources/main.jsx"></script>
 
    
-    @include('components/footer')
-</body>
-
-</html>
+ 
+</x-app-layout>

@@ -18,7 +18,7 @@
       <div class="hidden relative items-center flex-col sm:hidden md:hidden lg:flex lg:h-full lg:w-1/2 lg:max-w-xl">
           
         <div class="absolute h-full z-1 sm:w-full md:w-full lg:w-full xl:w-full ">
-          <img src="{{URL('assets/images/waves.svg')}}" alt="bg-signup" class="h-full w-full object-cover z-0">
+          <img src="{{URL('assets/images/waves.svg')}}" alt="bg-signup" class="h-[800px] w-full object-cover z-0">
         </div>
         <span class="text-3xl text-white font-sans font-bold mr-60 ml-10 mt-12 xl:mt-[4rem] z-10 xl:text-4xl xl:mb-10 xl:ml-0">GOVra</span>
 
@@ -31,10 +31,9 @@
       </div>
 
       {{-- signup right side --}}
-      <div class="flex flex-col max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl lg:w-1/2 lg:justify-center items-center h-full w-full  relative" >
-
+      <div class="flex flex-col max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl lg:w-1/2 lg:justify-center items-center h-full w-full  relative">
         <div class="absolute h-full z-1 sm:w-full md:w-full lg:w-full xl:w-full">
-          <img src="{{URL('assets/images/blob-scene-haikei.svg')}}" alt="bg-signup" class="h-full w-full object-cover">
+            <img src="{{URL('assets/images/blob-scene-haikei.svg')}}" alt="bg-signup" class="h-full w-full object-cover">
         </div>
    
         <h1 class="text-3xl text-center mt-8 mb-3 font-sans font-bold lg:mt-0 xl:text-4xl text-white z-10">Sign up</h1>
@@ -43,6 +42,7 @@
         <div class=" relative max-w-[80%] sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] lg:mb-[12rem] xl:mb-[13rem]  lg:h-1/2 w-full h-4/5 px-3">
         
           <form method="POST" action="{{ route('signup.post')}}">
+            @csrf
             <label class="block">
                 <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
                   Name
@@ -54,14 +54,14 @@
                 <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
                   Gender
                 </span>
-                <input type="text" name="name"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter gender" />
+                <input type="text" name="gender"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter gender" />
               </label>
 
               <label class="block">
                 <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
                   Contact No.
                 </span>
-                <input type="text" name="name"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter contact no." />
+                <input type="text" name="contact"  required class="h-[2.1rem] xl:h-[2.3rem] max-w-screen  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full  rounded-md  focus:ring-1 mb-3" placeholder="Enter contact no." />
               </label>
 
               <label class="block">
@@ -85,6 +85,19 @@
                 </span>
                
                   <input type="password" name="password" id="password" required class="relative h-[2.1rem] xl:h-[2.3rem] max-w-screen w-full  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md focus:ring-1 mb-3" placeholder="Enter password" />
+                  <div class="z-10" onclick="showPass()">
+                  <img  class="hidden absolute cursor-pointer bottom-[95px] right-5 h-8 lg:hidden lg:bottom-[-100px] xl:hidden " src="{{URL('/assets/icons/show.png')}}" id="showicon" alt="showicon">
+                  <img  class="absolute cursor-pointer bottom-[95px] right-5 h-8 lg:flex lg:bottom-[-100px]  xl:bottom-[-100px]"  src="{{URL('/assets/icons/hide.png')}}" id="hideicon" alt="hide">
+                  </div>
+              
+              </label>
+
+              <label class="block">
+                <span class="after:ml-0.5 after:text-red-500 block text-base font-medium xl:text-lg text-white">
+                  Confirm Password
+                </span>
+               
+                  <input type="confirm password" name="confirm password" id="confirm password" required class="relative h-[2.1rem] xl:h-[2.3rem] max-w-screen w-full  mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md focus:ring-1 mb-3" placeholder="Confirm password" />
                   <div class="z-10" onclick="showPass()">
                   <img  class="hidden absolute cursor-pointer bottom-[95px] right-5 h-8 lg:hidden lg:bottom-[-100px] xl:hidden " src="{{URL('/assets/icons/show.png')}}" id="showicon" alt="showicon">
                   <img  class="absolute cursor-pointer bottom-[95px] right-5 h-8 lg:flex lg:bottom-[-100px]  xl:bottom-[-100px]"  src="{{URL('/assets/icons/hide.png')}}" id="hideicon" alt="hide">

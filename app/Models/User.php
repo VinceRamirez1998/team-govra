@@ -14,7 +14,10 @@ use Spatie\Permission\Traits\HasRoles;
 class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
-
+    
+    const User = "User";
+    const Admin = "Admin";
+    const SuperAdmin = "SuperAdmin";   
     /**
      * The attributes that are mass assignable.
      *
@@ -22,8 +25,12 @@ class User extends Authenticatable implements FilamentUser
      */
     protected $fillable = [
         'name',
+       'gender',
+        'contact',
         'email',
+        'username',
         'password',
+        
         
         
     ];
@@ -51,6 +58,6 @@ class User extends Authenticatable implements FilamentUser
     //it's verifyry the super admin account only to access the admin  super admin dashboard
     public function canAccessFilament(): bool
     {
-        return $this->hasRole(['Admin', 'Super Admin']);
+        return $this->hasRole(['Admin', 'Super Admin','Moderator','User']);
     }
 }

@@ -13,7 +13,7 @@ class AnnouncementPolicy
      */
     public function viewAny(User $user): bool
     {
-        if($user->hasPermissionTo('View Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+        if($user->hasPermissionTo('View Announcement') || $user->hasPermissionTo('CRUD Announcement')){
             return true;
         }
         return false;
@@ -25,7 +25,7 @@ class AnnouncementPolicy
      */
     public function view(User $user): bool
     {
-        if($user->hasPermissionTo('View Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+        if($user->hasPermissionTo('View Announcement') || $user->hasPermissionTo('CRUD Announcement')){
             return true;
         }
         return false;
@@ -37,7 +37,7 @@ class AnnouncementPolicy
      */
     public function create(User $user): bool
     {
-        if($user->hasPermissionTo('Create Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+        if($user->hasPermissionTo('Create Announcement') || $user->hasPermissionTo('CRUD Announcement')){
             return true;
         }
         return false;
@@ -49,7 +49,7 @@ class AnnouncementPolicy
      */
     public function update(User $user): bool
     {
-        if($user->hasPermissionTo('Update Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+        if($user->hasPermissionTo('Update Announcement') || $user->hasPermissionTo('CRUD Announcement')){
             return true;
         }
         return false;
@@ -61,7 +61,7 @@ class AnnouncementPolicy
      */
     public function delete(User $user): bool
     {
-        if($user->hasPermissionTo('Delete Announcements') || $user->hasPermissionTo('CRUD Announcements')){
+        if($user->hasPermissionTo('Delete Announcement') || $user->hasPermissionTo('CRUD Announcement')){
             return true;
         }
         return false;

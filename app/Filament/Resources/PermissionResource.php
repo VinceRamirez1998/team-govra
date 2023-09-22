@@ -22,6 +22,7 @@ use App\Models\Permission;
 class PermissionResource extends Resource
 {
     protected static ?string $model = Permission::class;
+    protected static ?string $navigationGroup = 'Type of User';
 
     protected static ?string $navigationIcon = 'heroicon-o-key';
 
@@ -47,7 +48,7 @@ class PermissionResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('name')->searchable()->sortable(),
-                TextColumn::make('created_at')->dateTime('M j, Y - h:i a')->timezone('Asia/Manila')->sortable(),
+                TextColumn::make('created_at')->dateTime('M j, Y - h:i a')->timezone('Asia/Manila   ')->sortable(),
 
                 
             ])
@@ -57,6 +58,7 @@ class PermissionResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
+                
 
             ])
             ->bulkActions([

@@ -1,6 +1,11 @@
+
 <x-app-layout>
+    <title>{{$nudetails->title}}</title>
+   
+
+
     @include('components/nav-user')
-    
+   
     
     
     {{-- csc banner logo --}}
@@ -330,18 +335,20 @@
             <hr class="flex md:hidden h-10 w-full border-t-2 border-gray-300 mt-2 absolute">
 
             {{-- new and update container --}}
-            <div class="flex justify-center mt-5 2xl:mt-0 items-center w-full 2xl:w-[70%] border-solid  h-auto  lg:justify-center lg:h-auto ">
-                <div class="flex items-center flex-col rounded-lg h-auto lg:h-[98%] w-[90%] lg:w-[95%] border-solid border-2 border-red-600 pb-12">
+            <div class="flex justify-center mt-5 2xl:mt-0 items-start w-full 2xl:w-[70%] py-5  h-auto">
+                <div class="flex items-center flex-col rounded-lg h-auto  w-[90%] lg:w-[95%] pb-12">
 
-                    <span class="text-white text-center w-full bg-red-600 h-9 text-2xl font-sans font-bold xl:text-start xl:pl-5 xl:h-11 xl:justify-center xl:items-center xl:text-2xl xl:pt-1">News and Updates</span>
-                    @foreach ($newsUpdates as $items)
-                    <x-news-updates :items="$items">
-              
+                   
+                   
+
+                    <x-news-updates-clicked :nudetails="$nudetails">
+                    
+                      
                  
                         
-                    </x-news-updates>
+                    </x-news-updates-clicked>
                    
-                    @endforeach
+                
                    
                 </div>
 

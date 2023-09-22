@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<x-app-layout>
     <title>Document</title>
     @vite('resources/css/app.css')
-</head>
-<body>
+
+
 
     @include('components/nav-user')
-    @include('components/highlights-directory-nav')
+ 
     
     <div class="flex flex-col justify-center items-center h-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl">
 
@@ -163,13 +159,6 @@
 
     </div>
 
-    @include('components/footer')
+</x-app-layout>
  
       
-</body>
-
-  
-  
-  
-
-</html>

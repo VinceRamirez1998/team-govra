@@ -2,7 +2,7 @@
    <div class="flex items-center justify-center gap-5 h-[11rem] sm:h-[13rem] md:h-[14rem] xl:h-[15rem] xl:gap-20 2xl:h-[16rem] w-full bg-bgcolor">
     {{-- government logo here --}}
         <div class=" flex justify-center items-center h-[80%] w-[45%] sm:w-[40%] md:w-[35%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%] border-solid border-2 border-sky-50 shadow-md  rounded-lg bg-gray-50">
-           <img class="h-[90%] w-[60%] lg:w-[85%] 2xl:w-[70%] object-fill" src="/storage/{{ $details->logo }}" alt="DepEd">
+           <img class="h-[90%] w-[55%] object-fill" src="/storage/{{ $details->logo }}" alt="DepEd">
         
         </div>
         {{-- government details --}}
